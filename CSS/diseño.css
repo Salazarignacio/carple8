@@ -1,489 +1,441 @@
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    font-family: sans-serif;
-                    color: white;
-                    font-size: 15px;
-                }
-                
-                i {
-                    color: rgb(0, 174, 255);
-                }
-                
-                body {
-                    background-image: url(../Imagenes/pexels-soloman-soh-1492232.jpg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: auto;
-                    object-fit: cover;
-                }
-                /* bootstrap header */
-                
-                .transparencia {
-                    background-image: linear-gradient(to right, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
-                }
-                
-                .cab--footer {
-                    display: flex;
-                    align-items: center;
-                    min-height: 220px;
-                }
-                /* animacion*/
-                
-                .nav-item a {
-                    position: relative;
-                }
-                
-                .nav-item a:after {
-                    content: "";
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 2px;
-                    background: rgb(0, 174, 255);
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: transform 0.2s;
-                }
-                
-                .nav-item a:hover:after {
-                    transform: left;
-                    transform: scaleX(1);
-                }
-                /* fin animacion */
-                /* NavBar adaptaciones*/
-                
-                .navbar {
-                    height: 80px;
-                }
-                
-                .nav-link {
-                    color: white;
-                }
-                
-                .navbar-brand img {
-                    width: 200px;
-                }
-                /* bootstrap Contacto adaptaciones */
-                
-                #exampleFormControlInput1 {
-                    width: 400px;
-                }
-                
-                #exampleFormControlTextarea1 {
-                    height: 400px;
-                }
-                /* probando estilo en enlace activo */
-                
-                .cab {
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    height: 80px;
-                    max-width: 1200px;
-                }
-                /* lista del header */
-                
-                .cab__li i {
-                    display: none;
-                }
-                
-                .cab__li__enlaces {
-                    width: 350px;
-                    display: flex;
-                    justify-content: space-between;
-                    list-style-type: none;
-                }
-                /* enlaces header*/
-                
-                .cab__li__enlaces a {
-                    text-decoration: none;
-                }
-                
-                .activo {
-                    font-weight: bold;
-                    font-size: 17px;
-                    color: rgb(0, 174, 255);
-                }
-                /* probando animacion en enlaces */
-                
-                .nav-link:hover,
-                a:hover,
-                .activo:hover {
-                    color: rgb(0, 174, 255);
-                }
-                
-                .cab__li__enlaces li a {
-                    position: relative;
-                }
-                
-                i:hover {
-                    color: white;
-                }
-                
-                .cab__li__enlaces li a:after {
-                    content: "";
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 1px;
-                    background: rgb(0, 174, 255);
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: transform 0.2s;
-                }
-                
-                .cab__li__enlaces li a:hover:after {
-                    transform: left;
-                    transform: scaleX(1);
-                }
-                /* section (todas) */
-                
-                section {
-                    min-height: 90vh;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 100px 0 100px;
-                }
-                /* Footer */
-                
-                .cab--footer {
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    height: 180px;
-                    padding: 2.5rem;
-                }
-                
-                .cab--footer p {
-                    color: rgb(0, 174, 255);
-                }
-                
-                .redes i {
-                    font-size: 2rem;
-                    margin: 15px;
-                }
-                /* Paginas del sitio */
-                /* --------------------------Pagina Inicio-------------------------- */
-                
-                .seccion__img {
-                    display: flex;
-                    justify-content: flex-start;
-                    width: 100%;
-                }
-                
-                .seccion__img img {
-                    width: 860px;
-                }
-                /* --------------------------Pagina Productos-------------------------- */
-                
-                .seccionProductos {
-                    background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
-                    padding: 2.5rem;
-                    width: 1200px;
-                    border-radius: 0.3rem;
-                }
-                
-                .contendorProductos {
-                    display: flex;
-                    gap: 20px;
-                    justify-content: center;
-                }
-                
-                .producto1 p,
-                .producto2 p,
-                .producto3 p {
-                    line-height: 18px;
-                }
-                
-                .producto1,
-                .producto2,
-                .producto3 {
-                    width: 350px;
-                    border: solid 3px rgba(112, 120, 138);
-                    padding: 0.8rem;
-                    border-radius: 0.3rem;
-                    opacity: 0.7;
-                }
-                
-                .producto1:hover,
-                .producto2:hover,
-                .producto3:hover {
-                    border: solid 3px rgb(0, 174, 255);
-                    opacity: 1;
-                }
-                
-                .producto1 img,
-                .producto2 img,
-                .producto3 img {
-                    width: 100%;
-                    margin-bottom: 1rem;
-                }
-                /* --------------------------Pagina Empresa-------------------------- */
-                
-                .contenedorEmpresa {
-                    padding: 2.5rem;
-                    background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
-                    border-radius: 0.3rem;
-                }
-                
-                h2 {
-                    font-size: 29px;
-                    margin-bottom: 2rem;
-                    color: rgb(0, 174, 255);
-                }
-                
-                .empresa {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 30px;
-                    border: solid 3px rgba(112, 120, 138);
-                    padding: 0.8rem;
-                    border-radius: 0.3rem;
-                }
-                
-                .empresa__texto {
-                    width: 380px;
-                }
-                
-                .empresa__texto p {
-                    line-height: 18px;
-                }
-                
-                .empresa__img {
-                    width: 380px;
-                }
-                
-                .empresa__img img {
-                    width: 100%;
-                    border-radius: 0.3rem;
-                }
-                /* --------------------------Pagina Obras-------------------------- */
-                
-                .obras {
-                    background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
-                    padding: 2.5rem;
-                    border-radius: 0.3rem;
-                }
-                /* grid de la galeria de imagenes (las imagenes son provisorias no estan del todo ajustadas) */
-                
-                .grid {
-                    max-width: 900px;
-                    display: grid;
-                    justify-content: center;
-                    grid-template-columns: 280px 280px 280px;
-                    grid-template-rows: 280px 280px;
-                    gap: 1rem;
-                    border: solid 3px rgba(112, 120, 138);
-                    padding: 0.8rem;
-                    border-radius: 0.3rem;
-                }
-                
-                .grid img:hover {
-                    border: solid 3px rgb(0, 174, 255);
-                    opacity: 1;
-                }
-                
-                .grid img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 3px;
-                    border: solid 3px rgba(112, 120, 138);
-                    opacity: 0.7;
-                }
-                /* --------------------------Pagina Contactos (adaptado a bootstrap)-------------------------- */
-                
-                .contenedorFormulario {
-                    background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
-                    padding: 2.5rem;
-                    border-radius: 0.3rem;
-                }
-                
-                .formulario__contacto {
-                    border: solid 3px rgba(112, 120, 138);
-                    padding: 0.8rem;
-                    border-radius: 0.3rem;
-                }
-                
-                .formulario__contacto button {
-                    color: black;
-                    border: solid 1px rgb(0, 174, 255);
-                    border-radius: 0.3rem;
-                    background-color: rgb(0, 174, 255);
-                    width: 80px;
-                    height: 40px;
-                    font-size: 16px;
-                }
-                /* --------------------------Diseño resposive Tablet-------------------------- */
-                
-                @media screen and (max-width: 1023px) {
-                    .cab,
-                    .cab--footer,
-                    .seccionObras,
-                    .seccionEmpresa,
-                    .seccionProductos,
-                    .obras {
-                        padding: 1.5rem;
-                    }
-                    /* --------------------------Productos MQ Tablet-------------------------- */
-                    .seccionProductos {
-                        width: 500px;
-                    }
-                    .contendorProductos {
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    .producto1,
-                    .producto2,
-                    .producto3 {
-                        width: 100%;
-                        margin-bottom: 1.5rem;
-                        opacity: 1;
-                    }
-                    /* --------------------------Empresa MQ Tablet-------------------------- */
-                    .empresa {
-                        max-width: 100%;
-                        gap: 30px;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    .contenedorEmpresa {
-                        width: 100%;
-                        padding: 1.5rem;
-                    }
-                    .empresa__texto,
-                    .empresa__img {
-                        width: 100%;
-                    }
-                    /* --------------------------Productos MQ Tablet-------------------------- */
-                    .producto1,
-                    .producto2,
-                    .producto3 {
-                        opacity: 1;
-                    }
-                    /* --------------------------Obras MQ Tablet-------------------------- */
-                    .grid {
-                        max-width: 600px;
-                        display: grid;
-                        grid-template-columns: 280px 280px;
-                        grid-template-rows: auto;
-                    }
-                    /* --------------------------Contacto MQ Tablet-------------------------- */
-                    .formulario {
-                        flex-direction: column;
-                    }
-                    .contenedorFormulario {
-                        padding: 1.5rem;
-                    }
-                }
-                /* --------------------------Diseño resposive Mobile-------------------------- */
-                
-                @media screen and (max-width: 600px) {
-                    /* header MQ */
-                    .navbar-brand {
-                        display: none;
-                    }
-                    .cab {
-                        flex-wrap: wrap;
-                    }
-                    .cab__li__enlaces,
-                    .cab__img {
-                        display: none;
-                    }
-                    /* section MQ */
-                    section {
-                        min-height: 250px;
-                    }
-                    /* footer MQ */
-                    .cab--footer {
-                        justify-content: center;
-                        flex-direction: column;
-                    }
-                    .info {
-                        font-size: 12px;
-                        line-height: 18px;
-                        text-align: center;
-                    }
-                    /* Menu Hamburguesa */
-                    .cab__li i {
-                        display: inline-block;
-                        padding: 0.5rem 1rem;
-                        font-size: 25px;
-                    }
-                    .info p {
-                        font-size: 14px;
-                    }
-                    /* --------------------------Inicio MQ-------------------------- */
-                    .seccion__img img {
-                        min-width: 100%;
-                    }
-                    .navbar-toggler-icon i {
-                        font-size: 25px;
-                    }
-                    /* --------------------------Productos MQ-------------------------- */
-                    .seccionProductos {
-                        max-width: 275px;
-                    }
-                    .contendorProductos {
-                        flex-direction: column;
-                    }
-                    .producto1,
-                    .producto2,
-                    .producto3 {
-                        width: 100%;
-                        margin-bottom: 1.5rem;
-                        opacity: 1;
-                    }
-                    /* --------------------------Empresa MQ-------------------------- */
-                    .empresa {
-                        max-width: 100%;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
-                    .contenedorEmpresa {
-                        width: 100%;
-                        max-width: 650px;
-                        padding: 1.5rem;
-                    }
-                    .empresa__texto,
-                    .empresa__img {
-                        width: 100%;
-                    }
-                    /* --------------------------Obras MQ-------------------------- */
-                    .grid {
-                        display: grid;
-                        grid-template-columns: 280px;
-                    }
-                    .obras {
-                        padding: 1.5rem;
-                    }
-                    .grid img {
-                        opacity: 1;
-                    }
-                    /* --------------------------Contacto MQ-------------------------- */
-                    .formulario {
-                        flex-direction: column;
-                    }
-                    .contenedorFormulario {
-                        max-width: 320px;
-                        padding: 1.5rem;
-                    }
-                    .form-control {
-                        max-width: 100%;
-                    }
-                }
+                                                                                                                                                                                                                                                                                                                            * {
+                                                                                                                                                                                                                                                                                                                            margin: 0;
+                                                                                                                                                                                                                                                                                                                            padding: 0;
+                                                                                                                                                                                                                                                                                                                            box-sizing: border-box;
+                                                                                                                                                                                                                                                                                                                            font-family: sans-serif;
+                                                                                                                                                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                                                                                                                                            font-size: 15px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        i {
+                                                                                                                                                                                                                                                                                                                            color: rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        body {
+                                                                                                                                                                                                                                                                                                                            background-image: url(../Imagenes/pexels-soloman-soh-1492232.jpg);
+                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;
+                                                                                                                                                                                                                                                                                                                            background-position: center;
+                                                                                                                                                                                                                                                                                                                            background-size: auto;
+                                                                                                                                                                                                                                                                                                                            object-fit: cover;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* bootstrap header */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .transparencia {
+                                                                                                                                                                                                                                                                                                                            background-image: linear-gradient(to right, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab--footer {
+                                                                                                                                                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                                                                                                                                                            align-items: center;
+                                                                                                                                                                                                                                                                                                                            min-height: 220px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* animacion*/
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .nav-item a {
+                                                                                                                                                                                                                                                                                                                            position: relative;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .nav-item a:after {
+                                                                                                                                                                                                                                                                                                                            content: "";
+                                                                                                                                                                                                                                                                                                                            position: absolute;
+                                                                                                                                                                                                                                                                                                                            top: 100%;
+                                                                                                                                                                                                                                                                                                                            left: 0;
+                                                                                                                                                                                                                                                                                                                            right: 0;
+                                                                                                                                                                                                                                                                                                                            bottom: 0;
+                                                                                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                                                                            height: 2px;
+                                                                                                                                                                                                                                                                                                                            background: rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                            transform: scaleX(0);
+                                                                                                                                                                                                                                                                                                                            transform-origin: left;
+                                                                                                                                                                                                                                                                                                                            transition: transform 0.2s;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .nav-item a:hover:after {
+                                                                                                                                                                                                                                                                                                                            transform: left;
+                                                                                                                                                                                                                                                                                                                            transform: scaleX(1);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* fin animacion */
+                                                                                                                                                                                                                                                                                                                        /* NavBar adaptaciones*/
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .navbar {
+                                                                                                                                                                                                                                                                                                                            height: 80px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .nav-link {
+                                                                                                                                                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .navbar-brand img {
+                                                                                                                                                                                                                                                                                                                            width: 200px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* bootstrap Contacto adaptaciones */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .col {
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgba(112, 120, 138);
+                                                                                                                                                                                                                                                                                                                            padding: 0.8rem;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .col textarea {
+                                                                                                                                                                                                                                                                                                                            height: 200px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* probando estilo en enlace activo */
+                                                                                                                                                                                                                                                                                                                        /* lista del header */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab__li i {
+                                                                                                                                                                                                                                                                                                                            display: none;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab__li__enlaces {
+                                                                                                                                                                                                                                                                                                                            width: 350px;
+                                                                                                                                                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                                                                                                                                                            justify-content: space-between;
+                                                                                                                                                                                                                                                                                                                            list-style-type: none;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* enlaces header*/
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab__li__enlaces a {
+                                                                                                                                                                                                                                                                                                                            text-decoration: none;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .activo {
+                                                                                                                                                                                                                                                                                                                            font-weight: bold;
+                                                                                                                                                                                                                                                                                                                            font-size: 17px;
+                                                                                                                                                                                                                                                                                                                            color: rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* probando animacion en enlaces */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .nav-link:hover,
+                                                                                                                                                                                                                                                                                                                        a:hover,
+                                                                                                                                                                                                                                                                                                                        .activo:hover {
+                                                                                                                                                                                                                                                                                                                            color: rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab__li__enlaces li a {
+                                                                                                                                                                                                                                                                                                                            position: relative;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        i:hover {
+                                                                                                                                                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab__li__enlaces li a:after {
+                                                                                                                                                                                                                                                                                                                            content: "";
+                                                                                                                                                                                                                                                                                                                            position: absolute;
+                                                                                                                                                                                                                                                                                                                            top: 100%;
+                                                                                                                                                                                                                                                                                                                            left: 0;
+                                                                                                                                                                                                                                                                                                                            right: 0;
+                                                                                                                                                                                                                                                                                                                            bottom: 0;
+                                                                                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                                                                            height: 1px;
+                                                                                                                                                                                                                                                                                                                            background: rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                            transform: scaleX(0);
+                                                                                                                                                                                                                                                                                                                            transform-origin: left;
+                                                                                                                                                                                                                                                                                                                            transition: transform 0.2s;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab__li__enlaces li a:hover:after {
+                                                                                                                                                                                                                                                                                                                            transform: left;
+                                                                                                                                                                                                                                                                                                                            transform: scaleX(1);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* section (todas) */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        section {
+                                                                                                                                                                                                                                                                                                                            margin: 100px 0 100px;
+                                                                                                                                                                                                                                                                                                                            min-height: 90vh;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* Footer */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab--footer {
+                                                                                                                                                                                                                                                                                                                            margin: 0 auto;
+                                                                                                                                                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                                                                                                                                                            justify-content: space-between;
+                                                                                                                                                                                                                                                                                                                            align-items: center;
+                                                                                                                                                                                                                                                                                                                            height: 180px;
+                                                                                                                                                                                                                                                                                                                            padding: 2.5rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .cab--footer p {
+                                                                                                                                                                                                                                                                                                                            color: rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .redes i {
+                                                                                                                                                                                                                                                                                                                            font-size: 2rem;
+                                                                                                                                                                                                                                                                                                                            margin: 15px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* Paginas del sitio */
+                                                                                                                                                                                                                                                                                                                        /* --------------------------Pagina Inicio-------------------------- */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .seccion__img {
+                                                                                                                                                                                                                                                                                                                            position: absolute;
+                                                                                                                                                                                                                                                                                                                            margin-top: 200px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .seccion__img img {
+                                                                                                                                                                                                                                                                                                                            max-width: 860px;
+                                                                                                                                                                                                                                                                                                                            min-width: 300px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* --------------------------Pagina Productos-------------------------- */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .container {
+                                                                                                                                                                                                                                                                                                                            background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
+                                                                                                                                                                                                                                                                                                                            padding: 2.5rem;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .row {}
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .col-md-4 {
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgba(112, 120, 138);
+                                                                                                                                                                                                                                                                                                                            padding: 0.8rem;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .col-md-4 img {
+                                                                                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .opacidadoff {
+                                                                                                                                                                                                                                                                                                                            opacity: 0.7;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .opacidadoff:hover {
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                            opacity: 1;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* --------------------------Pagina Empresa-------------------------- */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .col-md img {
+                                                                                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .borde {
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgba(112, 120, 138);
+                                                                                                                                                                                                                                                                                                                            padding: 0.8rem;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .contenedorEmpresa {
+                                                                                                                                                                                                                                                                                                                            padding: 2.5rem;
+                                                                                                                                                                                                                                                                                                                            background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        h2 {
+                                                                                                                                                                                                                                                                                                                            font-size: 29px;
+                                                                                                                                                                                                                                                                                                                            margin-bottom: 2rem;
+                                                                                                                                                                                                                                                                                                                            color: rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .empresa {
+                                                                                                                                                                                                                                                                                                                            display: flex;
+                                                                                                                                                                                                                                                                                                                            align-items: center;
+                                                                                                                                                                                                                                                                                                                            justify-content: center;
+                                                                                                                                                                                                                                                                                                                            gap: 30px;
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgba(112, 120, 138);
+                                                                                                                                                                                                                                                                                                                            padding: 0.8rem;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .empresa__texto {
+                                                                                                                                                                                                                                                                                                                            width: 380px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .empresa__texto p {
+                                                                                                                                                                                                                                                                                                                            line-height: 18px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .col-6 img {
+                                                                                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .empresa__img img {
+                                                                                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* --------------------------Pagina Obras-------------------------- */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .obras {
+                                                                                                                                                                                                                                                                                                                            background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
+                                                                                                                                                                                                                                                                                                                            padding: 2.5rem;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* grid de la galeria de imagenes (las imagenes son provisorias no estan del todo ajustadas) */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .grid {
+                                                                                                                                                                                                                                                                                                                            max-width: 900px;
+                                                                                                                                                                                                                                                                                                                            display: grid;
+                                                                                                                                                                                                                                                                                                                            justify-content: center;
+                                                                                                                                                                                                                                                                                                                            grid-template-columns: 280px 280px 280px;
+                                                                                                                                                                                                                                                                                                                            grid-template-rows: 280px 280px;
+                                                                                                                                                                                                                                                                                                                            gap: 1rem;
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgba(112, 120, 138);
+                                                                                                                                                                                                                                                                                                                            padding: 0.8rem;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .grid img:hover {
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                            opacity: 1;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .grid img {
+                                                                                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                                                                            height: 100%;
+                                                                                                                                                                                                                                                                                                                            object-fit: cover;
+                                                                                                                                                                                                                                                                                                                            border-radius: 3px;
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgba(112, 120, 138);
+                                                                                                                                                                                                                                                                                                                            opacity: 0.7;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* --------------------------Pagina Contactos (adaptado a bootstrap)-------------------------- */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .formulario__contacto {
+                                                                                                                                                                                                                                                                                                                            border: solid 3px rgba(112, 120, 138);
+                                                                                                                                                                                                                                                                                                                            padding: 0.8rem;
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        .boton {
+                                                                                                                                                                                                                                                                                                                            color: black;
+                                                                                                                                                                                                                                                                                                                            border: solid 1px rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                            border-radius: 0.3rem;
+                                                                                                                                                                                                                                                                                                                            background-color: rgb(0, 174, 255);
+                                                                                                                                                                                                                                                                                                                            width: 80px;
+                                                                                                                                                                                                                                                                                                                            height: 40px;
+                                                                                                                                                                                                                                                                                                                            font-size: 16px;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        /* --------------------------Diseño resposive Tablet-------------------------- */
+                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                        @media screen and (max-width: 1023px) {
+                                                                                                                                                                                                                                                                                                                            .cab,
+                                                                                                                                                                                                                                                                                                                            .cab--footer,
+                                                                                                                                                                                                                                                                                                                            .seccionObras,
+                                                                                                                                                                                                                                                                                                                            .seccionEmpresa,
+                                                                                                                                                                                                                                                                                                                            .seccionProductos,
+                                                                                                                                                                                                                                                                                                                            .obras {
+                                                                                                                                                                                                                                                                                                                                padding: 1.5rem;
+                                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                                            .navbar-brand {
+                                                                                                                                                                                                                                                                                                                                display: none;
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Productos MQ Tablet-------------------------- */
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Empresa MQ Tablet-------------------------- */
+                                                                                                                                                                                                                                                                                                                                .empresa {
+                                                                                                                                                                                                                                                                                                                                    max-width: 100%;
+                                                                                                                                                                                                                                                                                                                                    gap: 30px;
+                                                                                                                                                                                                                                                                                                                                    flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                    align-items: center;
+                                                                                                                                                                                                                                                                                                                                    justify-content: center;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .contenedorEmpresa {
+                                                                                                                                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                                                                                                                                    padding: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .empresa__texto,
+                                                                                                                                                                                                                                                                                                                                .empresa__img {
+                                                                                                                                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Productos MQ Tablet-------------------------- */
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Obras MQ Tablet-------------------------- */
+                                                                                                                                                                                                                                                                                                                                .grid {
+                                                                                                                                                                                                                                                                                                                                    max-width: 600px;
+                                                                                                                                                                                                                                                                                                                                    display: grid;
+                                                                                                                                                                                                                                                                                                                                    grid-template-columns: 280px 280px;
+                                                                                                                                                                                                                                                                                                                                    grid-template-rows: auto;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .container {
+                                                                                                                                                                                                                                                                                                                                    padding: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Contacto MQ Tablet-------------------------- */
+                                                                                                                                                                                                                                                                                                                                .formulario {
+                                                                                                                                                                                                                                                                                                                                    flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .contenedorFormulario {
+                                                                                                                                                                                                                                                                                                                                    padding: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                                            /* --------------------------Diseño resposive Mobile-------------------------- */
+                                                                                                                                                                                                                                                                                                                            @media screen and (max-width: 600px) {
+                                                                                                                                                                                                                                                                                                                                /* header MQ */
+                                                                                                                                                                                                                                                                                                                                .navbar-brand {
+                                                                                                                                                                                                                                                                                                                                    display: none;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .cab {
+                                                                                                                                                                                                                                                                                                                                    flex-wrap: wrap;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .cab__li__enlaces,
+                                                                                                                                                                                                                                                                                                                                .cab__img {
+                                                                                                                                                                                                                                                                                                                                    display: none;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* section MQ */
+                                                                                                                                                                                                                                                                                                                                section {
+                                                                                                                                                                                                                                                                                                                                    min-height: 250px;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* footer MQ */
+                                                                                                                                                                                                                                                                                                                                .cab--footer {
+                                                                                                                                                                                                                                                                                                                                    justify-content: center;
+                                                                                                                                                                                                                                                                                                                                    flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .info {
+                                                                                                                                                                                                                                                                                                                                    font-size: 12px;
+                                                                                                                                                                                                                                                                                                                                    line-height: 18px;
+                                                                                                                                                                                                                                                                                                                                    text-align: center;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* Menu Hamburguesa */
+                                                                                                                                                                                                                                                                                                                                .cab__li i {
+                                                                                                                                                                                                                                                                                                                                    display: inline-block;
+                                                                                                                                                                                                                                                                                                                                    padding: 0.5rem 1rem;
+                                                                                                                                                                                                                                                                                                                                    font-size: 25px;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .info p {
+                                                                                                                                                                                                                                                                                                                                    font-size: 14px;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Inicio MQ-------------------------- */
+                                                                                                                                                                                                                                                                                                                                .seccion__img img {
+                                                                                                                                                                                                                                                                                                                                    min-width: 100%;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .navbar-toggler-icon i {
+                                                                                                                                                                                                                                                                                                                                    font-size: 25px;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Productos MQ-------------------------- */
+                                                                                                                                                                                                                                                                                                                                .container {
+                                                                                                                                                                                                                                                                                                                                    max-width: 275px;
+                                                                                                                                                                                                                                                                                                                                    padding: 1rem;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Empresa MQ-------------------------- */
+                                                                                                                                                                                                                                                                                                                                .empresa {
+                                                                                                                                                                                                                                                                                                                                    max-width: 100%;
+                                                                                                                                                                                                                                                                                                                                    flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                    justify-content: center;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .contenedorEmpresa {
+                                                                                                                                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                                                                                                                                    max-width: 650px;
+                                                                                                                                                                                                                                                                                                                                    padding: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .empresa__texto,
+                                                                                                                                                                                                                                                                                                                                .empresa__img {
+                                                                                                                                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Obras MQ-------------------------- */
+                                                                                                                                                                                                                                                                                                                                .grid {
+                                                                                                                                                                                                                                                                                                                                    display: grid;
+                                                                                                                                                                                                                                                                                                                                    grid-template-columns: 280px;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .obras {
+                                                                                                                                                                                                                                                                                                                                    padding: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .grid img {
+                                                                                                                                                                                                                                                                                                                                    opacity: 1;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                /* --------------------------Contacto MQ-------------------------- */
+                                                                                                                                                                                                                                                                                                                                .formulario {
+                                                                                                                                                                                                                                                                                                                                    flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .contenedorFormulario {
+                                                                                                                                                                                                                                                                                                                                    max-width: 320px;
+                                                                                                                                                                                                                                                                                                                                    padding: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                .form-control {
+                                                                                                                                                                                                                                                                                                                                    max-width: 100%;
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                            }
