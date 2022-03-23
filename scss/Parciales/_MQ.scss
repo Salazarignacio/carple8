@@ -39,7 +39,7 @@
     
 
     body {
-        background-image: url(../Imagenes/pexels-engin-akyurt-2092075.jpg);
+        background-image: url(../Imagenes/pexels-damir-mijailovic-5209979.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -57,11 +57,7 @@ display: none;
     }
 
     
-    /* section MQ */
-
-    section {
-        min-height: 280px;
-    }
+ 
     /* footer MQ */
     .cab--footer {
         justify-content: center;
@@ -74,21 +70,25 @@ display: none;
         text-align: center;
     }
 
-    /* --------------------------Inicio MQ-------------------------- */
-    .seccion__img {
-        position: absolute;
-        margin-top: 0px;
-        margin-right: 0px;
-        & img {
-            min-width: 100%;
-        }
-    }
-    
-
-    
     .navbar-toggler-icon i {
         font-size: 25px;
     }
+    /* --------------------------Inicio MQ-------------------------- */
+    
+    .seccion__img {
+        
+        margin-top: 100px !important;
+        margin: 0 auto;
+         & img {
+             width: 100%;
+             max-width: 400px;
+             margin: 0 auto;
+             display: block;
+         }
+     }
+
+    
+  
     /* --------------------------Empresa MQ-------------------------- */
     .carousel-inner {
         display: none;

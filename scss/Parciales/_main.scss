@@ -1,11 +1,11 @@
 /* Index */
 
 .seccion__img {
-    position: absolute;
-    margin-top: 300px;
-    margin-right: 650px;
+   position: absolute;
+   margin-top: 250px;
     & img {
-        min-width: 500px;
+        width: 100%;
+        max-width: 800px;
     }
 }
 
