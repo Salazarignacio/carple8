@@ -1,0 +1,17 @@
+/* Index */
+
+.seccion__img {
+    position: absolute;
+    margin-top: 300px;
+    margin-right: 650px;
+    & img {
+        min-width: 500px;
+    }
+}
+
+/* Section */
+
+section {
+    margin: 100px 0px 100px;
+    min-height: 90vh;
+}
