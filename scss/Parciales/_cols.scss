@@ -1,27 +1,45 @@
 .fa-solid   {
-    color: white ;
-    font-size: 40px;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+ 
+    
+}
+
+.iconos {
+    width: 180px;
+    height: 150px;
+    background-color: rgba(160, 160, 160, 0.274);
+    border-radius: 00.3rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin: 0 .5rem .5rem .5rem;
+    font-size: 15px;
+
+
 }
 
 .form-control  {
-    background-color: transparent;
+    background-color: rgba(160, 160, 160, 0.274);
     color: white;
+    width: 100%    
 }
 
 
 #exampleFormControlTextarea1 {
-    @extend .form-control;
-    height: 300px ;
+    @extend.form-control;
+    
     margin-bottom: 1rem;
+    max-height: 400px;
+    min-height: 300px;
     
 }
 
 .col-md  p{
-    margin-bottom: 1rem;
+    
     margin-bottom: 0;
     
   
@@ -31,6 +49,29 @@
 
 .destacado {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
 }
 
+.container, .contenedor-m, .contenedor {
+    @include Estilo-Contenedor(linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)), 2.5rem 1.2rem 1.2rem 1.2rem, 0.3rem)
+ }
+
+.contenedor-m {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.col-md-4 {
+    border: 0 .5 .5 .5 !important;
+
+
+//contenedor contactos
+}
+.contenedorContactos {
+    @extend .contenedor-m;
+    max-width: 640px;
+}
+
+ .btn-outline-info {
+    width: 100%;
+}
