@@ -1,19 +1,24 @@
 /* Footer */
 
+
 .cab--footer {
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include Flex(space-between, center);
     height: 180px;
     padding: 2.5rem;
 }
 
 .cab--footer p {
-    color: rgb(0, 174, 255);
+    color: rgb(0, 174, 255);;
 }
 
 .redes i {
     font-size: 2rem;
     margin: 15px;
 }
+
+.transparencia--footer {
+    background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
+  }
+  
+

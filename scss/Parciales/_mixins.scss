@@ -1,0 +1,13 @@
+@mixin Flex($eje-principal, $eje-secundario) {
+    display: flex;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}
+
+
+@mixin Estilo-Contenedor($container-color, $container-padding, $container-border)
+{
+    background-image: $container-color;
+    padding: $container-padding;
+    border-radius: $container-border;
+}

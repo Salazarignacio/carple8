@@ -1,0 +1,36 @@
+.fa-solid   {
+    color: white ;
+    font-size: 40px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-control  {
+    background-color: transparent;
+    color: white;
+}
+
+
+#exampleFormControlTextarea1 {
+    @extend .form-control;
+    height: 300px ;
+    margin-bottom: 1rem;
+    
+}
+
+.col-md  p{
+    margin-bottom: 1rem;
+    margin-bottom: 0;
+    
+  
+    display: flex;
+    justify-content: center;
+}
+
+.destacado {
+    font-weight: 700;
+    font-size: 20px;
+}
+
