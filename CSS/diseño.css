@@ -140,7 +140,7 @@ i:hover {
   .navbar-brand {
     display: none; }
   body {
-    background-image: url(../../Imagenes/metal.jpeg);
+    background-image: url(../Imagenes/metal.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
