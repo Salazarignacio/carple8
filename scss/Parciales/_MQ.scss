@@ -41,7 +41,7 @@
     
 
     body {
-        background-image: url(../Imagenes/pexels-damir-mijailovic-5209979.jpg);
+        background-image: url(../../Imagenes/metal.jpeg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -98,8 +98,9 @@ display: none;
 
     .col-md-4 { margin-bottom: 0.5rem;
     }
+
+    .iconos {
+        width: 90% !important;
+    }
  }
 
- .iconos {
-    margin-bottom: .5rem;
-}
