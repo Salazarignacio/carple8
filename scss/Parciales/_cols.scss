@@ -52,13 +52,20 @@
     font-size: 18px;
 }
 
-.container, .contenedor-m, .contenedor {
+.container, .contenedor-m, .contenedor  {
     @include Estilo-Contenedor(linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)), 2.5rem 1.2rem 1.2rem 1.2rem, 0.3rem)
+    
  }
 
 .contenedor-m {
     max-width: 1300px;
     margin: 0 auto;
+
+}
+
+.contenedorImg {
+width: 1200px;  
+    background-color: rgba(0, 0, 0, 0.377);
 }
 
 .col-md-4 {

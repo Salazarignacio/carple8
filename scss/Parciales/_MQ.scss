@@ -1,5 +1,56 @@
 @import "Parciales/Variables";
 
+// definicion 4k
+
+$breackpoints: (
+    sm: 540px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1440px,
+    xxl: 2560px,
+);
+
+@mixin media-up($breackpoint) {
+    @media screen and (min-width: map-get($breackpoints, $breackpoint)) {
+    @content; 
+}
+}
+
+
+body {
+  
+  @include media-up(xxl){
+    background-image: url(../Imagenes/nuevaimagen.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    object-fit: cover;}
+    font-size: 30px;
+}
+
+.contenedorContactos {
+    @include media-up(xxl){ min-width: 1100px}
+
+}
+
+.seccion {
+    @include media-up(xxl){  
+       max-width: 1100px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        
+         &img  {
+             
+            
+             
+         }
+        }
+  
+ }
+
+
+
 /* --------------------------Diseño resposive Tablet-------------------------- */
 
 @media screen and (max-width: 1023px) {
@@ -32,6 +83,9 @@
 
 
 /* --------------------------Diseño resposive Mobile-------------------------- */
+
+
+  
 
 @media screen and (max-width: 600px) {
     /* header MQ */
@@ -96,11 +150,15 @@ display: none;
         display: none;
     }
 
-    .col-md-4 { margin-bottom: 0.5rem;
+    .col-md-4 { padding: 0;
     }
 
     .iconos {
         width: 90% !important;
+    }
+
+    .col {
+        border: none;
     }
  }
 

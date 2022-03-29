@@ -98,7 +98,6 @@ i:hover {
   background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)); }
 
 .col-md-4 {
-  border: solid 3px #70788a;
   padding: 0.8rem;
   border-radius: 0.3rem; }
   .col-md-4 img {
@@ -115,6 +114,27 @@ i:hover {
 .opacidadoff:hover {
   border: solid 3px #00aeff;
   opacity: 1; }
+
+body {
+  font-size: 30px; }
+  @media screen and (min-width: 2560px) {
+    body {
+      background-image: url(../Imagenes/nuevaimagen.jpg);
+      background-repeat: repeat;
+      background-position: center;
+      background-size: auto;
+      object-fit: cover; } }
+
+@media screen and (min-width: 2560px) {
+  .contenedorContactos {
+    min-width: 1100px; } }
+
+@media screen and (min-width: 2560px) {
+  .seccion {
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
 /* --------------------------Diseño resposive Tablet-------------------------- */
 @media screen and (max-width: 1023px) {
@@ -175,15 +195,18 @@ i:hover {
   .carousel-inner {
     display: none; }
   .col-md-4 {
-    margin-bottom: 0.5rem; }
+    padding: 0; }
   .iconos {
-    width: 90% !important; } }
+    width: 90% !important; }
+  .col {
+    border: none; } }
 
 /* Index */
-.seccion__img {
-  position: absolute;
-  margin-top: 250px; }
-  .seccion__img img {
+.seccion {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .seccion img {
     width: 100%;
     max-width: 800px; }
 
@@ -191,6 +214,12 @@ i:hover {
 section {
   margin: 100px 0px 100px;
   min-height: 90vh; }
+
+.navbar-brand img {
+  width: 200px; }
+
+.opaco {
+  background-color: rgba(0, 0, 0, 0.384); }
 
 .fa-solid {
   font-size: 30px;
@@ -236,6 +265,10 @@ section {
 .contenedor-m, .contenedorContactos {
   max-width: 1300px;
   margin: 0 auto; }
+
+.contenedorImg {
+  width: 1200px;
+  background-color: rgba(0, 0, 0, 0.377); }
 
 .col-md-4 {
   border: 0 .5 .5 .5 !important; }
