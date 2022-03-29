@@ -39,12 +39,6 @@ body {
        display: flex;
        justify-content: center;
        align-items: center;
-        
-         &img  {
-             
-            
-             
-         }
         }
   
  }
@@ -143,6 +137,9 @@ display: none;
          }
      }
 
+     .btn, .btn-outline-info {
+         margin-bottom: 1rem;
+     }
     
   
     /* --------------------------Empresa MQ-------------------------- */

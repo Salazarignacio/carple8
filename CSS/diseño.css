@@ -191,6 +191,8 @@ body {
       max-width: 400px;
       margin: 0 auto;
       display: block; }
+  .btn, .btn-outline-info {
+    margin-bottom: 1rem; }
   /* --------------------------Empresa MQ-------------------------- */
   .carousel-inner {
     display: none; }
@@ -209,6 +211,11 @@ body {
   .seccion img {
     width: 100%;
     max-width: 800px; }
+
+h2 {
+  font-size: 20px;
+  font-weight: lighter !important;
+  margin-bottom: 1rem; }
 
 /* Section */
 section {
