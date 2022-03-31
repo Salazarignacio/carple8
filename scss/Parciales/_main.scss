@@ -1,38 +1,31 @@
 /* Index */
 
 .seccion {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & img {
         width: 100%;
         max-width: 800px;
     }
 }
 
-
 h2 {
     font-size: 20px;
     font-weight: lighter !important;
-margin-bottom: 1rem;
-
+    margin-bottom: 1rem;
 }
+
 
 /* Section */
 
 // margin: 100px 0px 100px; 
-
 section {
-   
     min-height: 90vh;
-
-    
 }
 
 .navbar-brand img {
-
-width: 200px;
+    width: 200px;
 }
 
 .opaco {
@@ -40,62 +33,52 @@ width: 200px;
 }
 
 // sections
-
 #not-color {
-background-image: none;
-border-radius: 0;
+    background-image: none;
+    border-radius: 0;
 }
 
-$section-estilo: ( 
-modo: flex,
-eje-x: center,
-eje-y: center,
-Min-H: 100vh,);
-
+$section-estilo: ( modo: flex, eje-x: center, eje-y: center, Min-H: 100vh, );
 .section__empresa {
     background-image: url(../Imagenes/pexels-photo-1118786.jpeg);
-    display: map-get($section-estilo, modo );
+    display: map-get($section-estilo, modo);
     justify-content: map-get($section-estilo, eje-x);
     align-items: map-get($section-estilo, eje-x);
     min-height: map-get($section-estilo, Min-H);
-    margin: 0px;    
+    margin: 0px;
 }
 
 .separador__empresa {
     background-image: url(../Imagenes/pexels-photo-1118786.jpeg);
 }
+
 .separador__obras {
     //background-image: url(../Imagenes/contacto.jpeg);
 }
+
 .section__productos {
     background-image: url(../Imagenes/productos.jpeg);
     background-repeat: no-repeat;
     background-position: cover;
 }
+
 .separador {
     @include Flex (space-between, center);
     width: 100%;
     min-height: 50px;
     font-size: 25px;
     padding: 0 1rem 0 1rem;
+}
 
-    }
-    h1 {
-        font-weight: 500;
-        
-    }
+h1 {
+    font-weight: 500;
+}
 
-    .separador__productos {
-        background-image: url(../Imagenes/productos.jpeg);    
+.separador__productos {
+    background-image: url(../Imagenes/productos.jpeg);
 }
 
 .section__contacto {
-    display: flex;
-    justify-content: flex-end;
     background-image: url(../Imagenes/contacto.jpeg);
     background-repeat: no-repeat;
-    
-    
 }
-
-
