@@ -18,6 +18,7 @@ body {
     background-position: center;
     background-size: auto;
     object-fit: cover;
+background-attachment: fixed;
 }
 
 
@@ -39,6 +40,13 @@ display: flex;
 align-items: center;
 min-height: 220px;
 }*/
+
+.container-fluid   {
+    position: fixed;
+    background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
+    min-height: 80px;
+    z-index: 1;
+}
 
 
 /* animacion*/

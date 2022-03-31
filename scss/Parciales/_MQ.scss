@@ -86,7 +86,9 @@ body {
     .navbar-brand {
         display: none;
     }
-    
+    h2 {display: none;}
+    .separador {
+        @include Flex (center, center);}
 
     body {
         background-image: url(../Imagenes/metal.jpeg);

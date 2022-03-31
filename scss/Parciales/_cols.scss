@@ -57,6 +57,11 @@
     
  }
 
+ .contenedor {
+      background-image: none;
+      background-color: black;
+ }
+
 .contenedor-m {
     max-width: 1300px;
     margin: 0 auto;
@@ -69,8 +74,8 @@ width: 1200px;
 }
 
 .col-md-4 {
-    border: 0 .5 .5 .5 !important;
-
+gap: .5rem;
+padding: 0 !important;
 
 //contenedor contactos
 }
