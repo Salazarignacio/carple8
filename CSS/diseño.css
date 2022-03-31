@@ -104,25 +104,6 @@ i:hover {
 .transparencia--footer {
   background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)); }
 
-.col-md-4 {
-  padding: 0.8rem;
-  border-radius: 0.3rem; }
-  .col-md-4 img {
-    width: 100%;
-     }
-
-.margin {
-  margin: 0 20px 0 20px !important; }
-
-/* Opacidad */
-.opacidadoff {
-  opacity: 0.7; }
-
-.opacidadoff:hover {
-  border: solid 3px #00aeff;
-  opacity: 1;
-  background-color: rgba(70, 70, 70, 0.877); }
-
 body {
   font-size: 30px; }
   @media screen and (min-width: 2560px) {
@@ -282,6 +263,61 @@ h1 {
   background-image: url(../Imagenes/contacto.jpeg);
   background-repeat: no-repeat; }
 
+.col-md p {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center; }
+
+.destacado {
+  font-weight: 700;
+  font-size: 18px; }
+
+.container,
+.contenedor-m,
+.contenedorContactos,
+.contenedor,
+.contenedor__empresa {
+  background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
+  padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+  border-radius: 0.3rem; }
+
+.contenedor {
+  background-image: none;
+  background-color: black; }
+
+
+.contenedor-m,
+.contenedorContactos {
+  max-width: 1300px;
+  margin: 0 auto; }
+
+.col-md-4 {
+  gap: .5rem;
+  padding: 0 !important; }
+
+.col-md-4 {
+  padding: 0.8rem;
+  border-radius: 0.3rem; }
+  .col-md-4 img {
+    width: 100%; }
+
+/* Opacidad */
+.opacidadoff {
+  opacity: 0.7;
+  padding: 0.7rem !important;
+  margin-bottom: 0.5rem; }
+
+.opacidadoff:hover {
+  border: solid 3px #0dcaf0;
+  opacity: 1;
+  background-color: rgba(70, 70, 70, 0.877); }
+
+.margin {
+  margin: 0 20px 0 20px !important; }
+
+.btn-outline-info {
+  width: 100%; }
+
 .fa-solid {
   font-size: 30px;
   text-align: center;
@@ -309,42 +345,9 @@ h1 {
   max-height: 400px;
   min-height: 300px; }
 
-.col-md p {
-  margin-bottom: 0;
-  display: flex;
-  justify-content: center; }
-
-.destacado {
-  font-weight: 700;
-  font-size: 18px; }
-
-.container, .contenedor-m, .contenedorContactos, .contenedor {
-  background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
-  padding: 2.5rem 1.2rem 1.2rem 1.2rem;
-  border-radius: 0.3rem; }
-
-.contenedor {
-  background-image: none;
-  background-color: black; }
-
-.contenedor-m, .contenedorContactos {
-  max-width: 1300px;
-  margin: 0 auto; }
-
-.contenedorImg {
-  width: 1200px;
-  background-color: rgba(0, 0, 0, 0.377); }
-
-.col-md-4 {
-  gap: .5rem;
-  padding: 0 !important; }
-
-.contenedorContactos {
-  max-width: 640px; }
-
-.btn-outline-info {
-  width: 100%; }
+.ccl {
+  width: 600px; }
 
 .carousel-inner {
   width: 100%;
-  padding: 2rem; }
+  padding: 1rem; }

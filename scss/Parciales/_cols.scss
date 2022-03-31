@@ -1,10 +1,83 @@
-.fa-solid   {
+// columna empresa----------------------------------
+.col-md p {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.destacado {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.container,
+.contenedor-m,
+.contenedor,
+.contenedor__empresa {
+    @include Estilo-Contenedor(linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)), 2.5rem 1.2rem 1.2rem 1.2rem, 0.3rem)
+}
+
+// columna Obras -----------------------------
+.contenedor {
+    background-image: none;
+    background-color: black;
+}
+
+// contenedor y columna Productos -------------------------
+.contenedor-m {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.col-md-4 {
+    gap: .5rem;
+    padding: 0 !important;
+}
+
+//-----
+.col-md-4 {
+    padding: $border-padding;
+    border-radius: $container-border;
+    & img {
+        width: 100%;
+    }
+}
+
+// opacidad productos
+
+/* Opacidad */
+
+.opacidadoff {
+    opacity: 0.7;
+    padding: 0.7rem !important;
+    margin-bottom: 0.5rem;
+}
+
+.opacidadoff:hover {
+    border: solid 3px #0dcaf0;
+    ;
+    opacity: 1;
+    background-color: rgba(70, 70, 70, 0.877);
+}
+
+.margin {
+    margin: 0 20px 0 20px !important;
+}
+
+// Contactos -----------------------
+.contenedorContactos {
+    @extend .contenedor-m;
+}
+
+.btn-outline-info {
+    width: 100%;
+}
+
+// icono contacto
+.fa-solid {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    
- 
-    
 }
 
 .iconos {
@@ -18,72 +91,22 @@
     justify-content: center;
     margin: 0 .5rem .5rem .5rem;
     font-size: 15px;
-
-
 }
 
-.form-control  {
+// formulario
+.form-control {
     background-color: rgba(160, 160, 160, 0.274);
     color: white;
-    width: 100%    
+    width: 100%
 }
-
 
 #exampleFormControlTextarea1 {
     @extend.form-control;
-    
     margin-bottom: 1rem;
     max-height: 400px;
     min-height: 300px;
-    
 }
 
-.col-md  p{
-    
-    margin-bottom: 0;
-    
-  
-    display: flex;
-    justify-content: center;
-}
-
-.destacado {
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.container, .contenedor-m, .contenedor  {
-    @include Estilo-Contenedor(linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)), 2.5rem 1.2rem 1.2rem 1.2rem, 0.3rem)
-    
- }
-
- .contenedor {
-      background-image: none;
-      background-color: black;
- }
-
-.contenedor-m {
-    max-width: 1300px;
-    margin: 0 auto;
-
-}
-
-.contenedorImg {
-width: 1200px;  
-    background-color: rgba(0, 0, 0, 0.377);
-}
-
-.col-md-4 {
-gap: .5rem;
-padding: 0 !important;
-
-//contenedor contactos
-}
-.contenedorContactos {
-    @extend .contenedor-m;
-    max-width: 640px;
-}
-
- .btn-outline-info {
-    width: 100%;
+.ccl {
+    width: 600px;
 }
