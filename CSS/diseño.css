@@ -213,7 +213,7 @@ h2 {
   margin-bottom: 1rem; }
 
 /* Section */
-section {
+.seccion {
   min-height: 90vh; }
 
 .navbar-brand img {
@@ -259,7 +259,8 @@ h1 {
 
 .section__contacto {
   background-image: url(../Imagenes/contacto.jpeg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: contain; }
 
 .col-md p {
   margin-bottom: 0;
@@ -349,3 +350,22 @@ h1 {
 .carousel-inner {
   width: 100%;
   padding: 1rem; }
+
+
+.contenedor-m,
+.contenedorContactos {
+  max-width: 1300px;
+  margin: 0 auto; }
+
+.section__light {
+  background-image: url(../Imagenes/dark.jpeg);
+  background-attachment: fixed; }
+  .section__light h1, .section__light h2, .section__light p {
+    color: black; }
+
+.contenedor__light {
+  background-color: rgba(255, 255, 255, 0.699); }
+
+.section__dark {
+  background-image: url(../Imagenes/pexels-photo-1118786.jpeg);
+  background-attachment: fixed; }

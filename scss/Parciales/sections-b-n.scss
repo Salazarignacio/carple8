@@ -1,0 +1,21 @@
+.contenedor-m {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section__light {
+    background-image: url(../Imagenes/dark.jpeg);
+    background-attachment: fixed;
+    & h1, h2, p {
+        color: black;
+    }
+}
+
+.contenedor__light {
+    background-color: rgba(255, 255, 255, 0.699);
+}
+
+.section__dark {
+    background-image: url(../Imagenes/pexels-photo-1118786.jpeg);
+    background-attachment: fixed;
+}

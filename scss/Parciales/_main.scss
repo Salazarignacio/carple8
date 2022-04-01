@@ -20,7 +20,7 @@ h2 {
 /* Section */
 
 // margin: 100px 0px 100px; 
-section {
+.seccion {
     min-height: 90vh;
 }
 
@@ -81,4 +81,6 @@ h1 {
 .section__contacto {
     background-image: url(../Imagenes/contacto.jpeg);
     background-repeat: no-repeat;
+    background-position: contain   ;
+
 }
