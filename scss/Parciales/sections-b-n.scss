@@ -15,6 +15,7 @@
 }
 
 .negro  {
+    @extend .contenedor-m;
     border: solid 3px rgb(41, 188, 224);
     border-radius: 0.2rem;
    

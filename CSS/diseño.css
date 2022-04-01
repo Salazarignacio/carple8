@@ -272,6 +272,7 @@ h1 {
 .container,
 .contenedor-m,
 .contenedorContactos,
+.negro,
 .contenedor,
 .contenedor__empresa {
   background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
@@ -284,7 +285,8 @@ h1 {
 
 
 .contenedor-m,
-.contenedorContactos {
+.contenedorContactos,
+.negro {
   max-width: 1300px;
   margin: 0 auto; }
 
@@ -351,7 +353,8 @@ h1 {
 
 
 .contenedor-m,
-.contenedorContactos {
+.contenedorContactos,
+.negro {
   max-width: 1300px;
   margin: 0 auto;
   background-image: none;
