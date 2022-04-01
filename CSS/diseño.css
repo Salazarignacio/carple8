@@ -370,7 +370,9 @@ h1 {
   border-radius: 0.2rem; }
 
 .nigga {
-  background-color: #141414; }
+  background-image: url(../Imagenes/dark2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .section__dark {
   background-image: linear-gradient(to top, #141414, rgba(20, 20, 20, 0.18)); }
