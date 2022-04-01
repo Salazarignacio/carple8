@@ -1,21 +1,45 @@
 .contenedor-m {
     max-width: 1300px;
     margin: 0 auto;
+    background-image: none;
+    
+
+    border-radius: 0;
 }
 
 .section__light {
-    background-image: url(../Imagenes/dark.jpeg);
-    background-attachment: fixed;
-    & h1, h2, p {
-        color: black;
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.938), rgba(20, 20, 20, 0));
+       & h1, h2, p {
+        color: white
     }
 }
 
-.contenedor__light {
-    background-color: rgba(255, 255, 255, 0.699);
+.negro  {
+    border: solid 3px rgb(41, 188, 224);
+    border-radius: 0.2rem;
+   
+    
+    
+ 
+    }
+
+
+.nigga {
+    background-color: rgb(20, 20, 20);
 }
 
+   
+
 .section__dark {
-    background-image: url(../Imagenes/pexels-photo-1118786.jpeg);
+    background-image: linear-gradient(to top, rgb(20, 20, 20), rgba(20, 20, 20, 0.180));}
+
+.fondo__1 {
+    background-image: url(../Imagenes/pexels-soloman-soh-1492232.jpg);
     background-attachment: fixed;
+}
+
+.fondo__2 {
+    background-image: url(../Imagenes/pexels-mitchell-luo-3809772.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

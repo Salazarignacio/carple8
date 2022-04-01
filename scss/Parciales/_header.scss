@@ -13,8 +13,9 @@ i {
 }
 
 body {
-    background-image: url(../Imagenes/pexels-soloman-soh-1492232.jpg);
+    
     background-repeat: no-repeat;
+    
     background-position: center;
     background-size: auto;
     object-fit: cover;
@@ -109,7 +110,7 @@ i:hover {
 /* Borde */
 
 .col {
-    border: solid 3px rgb(112, 120, 138);
+  
     padding: 0.8rem;
     border-radius: 0.3rem;
 }
