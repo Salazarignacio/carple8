@@ -8,12 +8,16 @@
 }
 
 .section__light {
-    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.938), rgba(20, 20, 20, 0));
-       & h1, h2, p {
+    background-image: linear-gradient(to bottom, rgb(20, 20, 20), rgba(20, 20, 20, 0.0));
+    margin-bottom: 100px;   
+    & h1, h2, p {
         color: white
     }
 }
-
+.fondo {
+    @extend .contenedor-m;
+    background-image: linear-gradient(to , rgba(20, 20, 20, 0.938), rgba(20, 20, 20, 0)); 
+}
 .negro  {
     @extend .contenedor-m;
     border: solid 3px rgb(41, 188, 224);
@@ -26,15 +30,14 @@
 
 
 .nigga {
-    background-image: url(../Imagenes/dark2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-color: transparent;
 }
 
    
 
 .section__dark {
-    background-image: linear-gradient(to top, rgb(20, 20, 20), rgba(20, 20, 20, 0.180));}
+    background-image: linear-gradient(to top, rgb(20, 20, 20), rgba(20, 20, 20, 0.180));
+}
 
 .fondo__1 {
     background-image: url(../Imagenes/pexels-soloman-soh-1492232.jpg);

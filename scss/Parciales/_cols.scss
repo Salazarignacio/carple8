@@ -1,8 +1,7 @@
 // columna empresa----------------------------------
 .col-md p {
     margin-bottom: 0;
-    display: flex;
-    justify-content: center;
+ 
 }
 
 .destacado {
@@ -76,8 +75,7 @@
 // icono contacto
 .fa-solid {
     font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
+   
 }
 
 .iconos {
@@ -108,5 +106,25 @@
 }
 
 .ccl {
-    width: 600px;
+    width: 1200px
 }
+.papa_renegado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.renegado__tamaño {
+    max-width: 600px;
+    display: flex;
+   
+}
+
+.aber {
+    
+    width: 400px;
+}
+
+
