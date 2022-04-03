@@ -331,13 +331,6 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat; }
 
-@media screen and (min-width: 2560px) {
-  body {
-    background-repeat: repeat;
-    background-position: center;
-    background-size: auto;
-    object-fit: cover; } }
-
 body p {
   font-size: 17px; }
 
@@ -388,7 +381,7 @@ body p {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .fondo__1, .fondo__2 {
+  body, .fondo__1, .fondo__2 {
     background-image: url(../Imagenes/metal.jpeg);
     background-repeat: no-repeat;
     background-position: center;
