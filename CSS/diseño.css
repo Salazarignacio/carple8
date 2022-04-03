@@ -102,15 +102,15 @@ i:hover {
 .transparencia--footer {
   background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)); }
 
-body {
-  font-size: 30px; }
-  @media screen and (min-width: 2560px) {
-    body {
-      background-image: url(../Imagenes/nuevaimagen.jpg);
-      background-repeat: repeat;
-      background-position: center;
-      background-size: auto;
-      object-fit: cover; } }
+@media screen and (min-width: 2560px) {
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    object-fit: cover; } }
+
+body p {
+  font-size: 17px; }
 
 @media screen and (min-width: 2560px) {
   .contenedorContactos {
@@ -126,6 +126,10 @@ body {
 /* --------------------------Diseño resposive Tablet-------------------------- */
 @media screen and (max-width: 1023px) {
   /* Header */
+  .opacidadoff {
+    opacity: 1 !important; }
+  .negro {
+    border: none !important; }
   .navbar-brand {
     display: none; }
   .nav-item a {
@@ -143,6 +147,8 @@ body {
 
 /* --------------------------Diseño resposive Mobile-------------------------- */
 @media screen and (max-width: 600px) {
+  .opacidadoff {
+    opacity: 1 !important; }
   /* header MQ */
   .navbar-brand {
     display: none; }
@@ -192,7 +198,7 @@ body {
   .col-md-4 {
     padding: 0; }
   .iconos {
-    width: 90% !important; }
+    width: 95% !important; }
   .col {
     border: none; } }
 
@@ -212,7 +218,8 @@ h2 {
 
 /* Section */
 .seccion {
-  min-height: 90vh; }
+  min-height: 100vh;
+  margin: 0 auto; }
 
 .navbar-brand img {
   width: 200px; }
@@ -249,8 +256,13 @@ h2 {
   font-size: 25px;
   padding: 0 1rem 0 1rem; }
 
-h1 {
-  font-weight: 500; }
+h2 {
+  font-weight: 500;
+  font-size: 30px; }
+
+h3 {
+  font-size: 20px;
+  font-weight: lighter !important; }
 
 .separador__productos {
   background-image: url(../Imagenes/productos.jpeg); }
@@ -267,9 +279,10 @@ h1 {
 
 .container,
 .contenedor-m,
-.contenedorContactos,
 .fondo,
 .negro,
+.negro__bottom,
+.negro__top,
 .contenedor,
 .contenedor__empresa {
   background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
@@ -282,9 +295,10 @@ h1 {
 
 
 .contenedor-m,
-.contenedorContactos,
 .fondo,
-.negro {
+.negro,
+.negro__bottom,
+.negro__top {
   max-width: 1300px;
   margin: 0 auto; }
 
@@ -299,6 +313,12 @@ h1 {
     width: 100%; }
 
 /* Opacidad */
+.fondo {
+  background-image: linear-gradient(rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)) !important;
+  margin: 50px auto  50px auto !important;
+  padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+  border-radius: 0.3rem; }
+
 .opacidadoff {
   opacity: 0.7;
   padding: 0.3rem !important;
@@ -307,10 +327,13 @@ h1 {
 .opacidadoff:hover {
   border: solid 3px #0dcaf0;
   opacity: 1;
-  background-color: rgba(70, 70, 70, 0.877); }
+  background-color: black; }
 
 .margin {
   margin: 0 20px 0 20px !important; }
+
+.contenedorContactos {
+  max-width: 600px !important; }
 
 .btn-outline-info {
   width: 100%; }
@@ -319,7 +342,7 @@ h1 {
   font-size: 30px; }
 
 .iconos {
-  width: 180px;
+  width: 30%;
   height: 150px;
   background-color: rgba(160, 160, 160, 0.274);
   border-radius: 00.3rem;
@@ -362,9 +385,10 @@ h1 {
 
 
 .contenedor-m,
-.contenedorContactos,
 .fondo,
-.negro {
+.negro,
+.negro__bottom,
+.negro__top {
   max-width: 1300px;
   margin: 0 auto;
   background-image: none;
@@ -380,7 +404,16 @@ h1 {
   background-image: linear-gradient(to, rgba(20, 20, 20, 0.938), rgba(20, 20, 20, 0)); }
 
 .negro {
-  border: solid 3px #29bce0;
+  border-right: solid 3px #29bce0;
+  border-left: solid 3px #29bce0;
+  border-radius: 0.2rem; }
+
+.negro__bottom {
+  border-bottom: solid 3px #29bce0;
+  border-radius: 0.2rem; }
+
+.negro__top {
+  border-top: solid 3px #29bce0;
   border-radius: 0.2rem; }
 
 .nigga {

@@ -20,14 +20,22 @@
 }
 .negro  {
     @extend .contenedor-m;
-    border: solid 3px rgb(41, 188, 224);
+    border-right: solid 3px rgb(41, 188, 224);
+    border-left: solid 3px rgb(41, 188, 224);
     border-radius: 0.2rem;
-   
-    
-    
- 
     }
 
+    .negro__bottom  {
+        @extend .contenedor-m;
+        border-bottom: solid 3px rgb(41, 188, 224);
+        border-radius: 0.2rem;
+        }
+        .negro__top  {
+            @extend .contenedor-m;
+            border-top: solid 3px rgb(41, 188, 224);
+            border-radius: 0.2rem;
+            }
+    
 
 .nigga {
    background-color: transparent;
