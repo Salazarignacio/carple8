@@ -357,6 +357,8 @@ body p {
   /* Header */
   .negro {
     border: none; }
+  .container-fluid {
+    position: relative; }
   .navbar-brand {
     display: none; }
   .nav-item a {
