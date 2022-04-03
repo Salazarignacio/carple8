@@ -50,9 +50,8 @@ body {
 @media screen and (max-width: 1023px) {
 
    /* Header */
-   .opacidadoff {opacity: 1 !important;}
    .negro {
-       border: none !important;
+       border: none ;
    }
     .navbar-brand {
         display: none;
@@ -75,7 +74,13 @@ body {
 
     .opacidadoff {
         opacity: 1;
+        &:hover{
+            border: none;
+            background-color: transparent;
         }
+        }
+
+        
 }
 
 
@@ -85,22 +90,28 @@ body {
   
 
 @media screen and (max-width: 600px) {
-    .opacidadoff {opacity: 1 !important;}
+
     /* header MQ */
     .navbar-brand {
         display: none;
     }
-    h2 {display: none;}
+    h3 {display: none;}
     .separador {
         @include Flex (center, center);}
 
-    body {
-        background-image: url(../Imagenes/metal.jpeg);
+        .fondo__1, .fondo__2 {
+        background-image: url(../Imagenes/metal.jpeg) ;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         object-fit: contain;
+        background-attachment: fixed;
          }
+
+         .seccion {
+             min-height: 80vh;
+         }
+      
 
 .nav-item a:hover:after {
 display: none;
@@ -108,9 +119,7 @@ display: none;
     .container {
         padding: 1.5rem;
     }
-    .opacidadoff {
-        opacity: 1;
-    }
+ 
 
     
  

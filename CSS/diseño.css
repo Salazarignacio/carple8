@@ -102,106 +102,6 @@ i:hover {
 .transparencia--footer {
   background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)); }
 
-@media screen and (min-width: 2560px) {
-  body {
-    background-repeat: repeat;
-    background-position: center;
-    background-size: auto;
-    object-fit: cover; } }
-
-body p {
-  font-size: 17px; }
-
-@media screen and (min-width: 2560px) {
-  .contenedorContactos {
-    min-width: 1100px; } }
-
-@media screen and (min-width: 2560px) {
-  .seccion {
-    max-width: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
-
-/* --------------------------Diseño resposive Tablet-------------------------- */
-@media screen and (max-width: 1023px) {
-  /* Header */
-  .opacidadoff {
-    opacity: 1 !important; }
-  .negro {
-    border: none !important; }
-  .navbar-brand {
-    display: none; }
-  .nav-item a {
-    background-image: linear-gradient(to right, rgba(82, 82, 82, 0.85), rgba(0, 0, 0, 0.85));
-    z-index: 100;
-    color: #00aeff !important;
-    padding: 1rem !important;
-    border-radius: 0.3rem; }
-  .nav-item a:hover:after {
-    display: none; }
-  .nav-item a {
-    color: #00aeff !important; }
-  .opacidadoff {
-    opacity: 1; } }
-
-/* --------------------------Diseño resposive Mobile-------------------------- */
-@media screen and (max-width: 600px) {
-  .opacidadoff {
-    opacity: 1 !important; }
-  /* header MQ */
-  .navbar-brand {
-    display: none; }
-  h2 {
-    display: none; }
-  .separador {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  body {
-    background-image: url(../Imagenes/metal.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: contain; }
-  .nav-item a:hover:after {
-    display: none; }
-  .container {
-    padding: 1.5rem; }
-  .opacidadoff {
-    opacity: 1; }
-  /* footer MQ */
-  .cab--footer {
-    justify-content: center;
-    flex-direction: column;
-    min-height: 210px; }
-  .info {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center; }
-  .navbar-toggler-icon i {
-    font-size: 25px; }
-  /* --------------------------Inicio MQ-------------------------- */
-  .seccion__img {
-    margin-top: 100px !important;
-    margin: 0 auto; }
-    .seccion__img img {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-      display: block; }
-  .btn, .btn-outline-info {
-    margin-bottom: 1rem; }
-  /* --------------------------Empresa MQ-------------------------- */
-  .carousel-inner {
-    display: none; }
-  .col-md-4 {
-    padding: 0; }
-  .iconos {
-    width: 95% !important; }
-  .col {
-    border: none; } }
-
 /* Index */
 .seccion {
   display: flex;
@@ -430,3 +330,103 @@ h3 {
   background-image: url(../Imagenes/pexels-mitchell-luo-3809772.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
+
+@media screen and (min-width: 2560px) {
+  body {
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    object-fit: cover; } }
+
+body p {
+  font-size: 17px; }
+
+@media screen and (min-width: 2560px) {
+  .contenedorContactos {
+    min-width: 1100px; } }
+
+@media screen and (min-width: 2560px) {
+  .seccion {
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
+/* --------------------------Diseño resposive Tablet-------------------------- */
+@media screen and (max-width: 1023px) {
+  /* Header */
+  .negro {
+    border: none; }
+  .navbar-brand {
+    display: none; }
+  .nav-item a {
+    background-image: linear-gradient(to right, rgba(82, 82, 82, 0.85), rgba(0, 0, 0, 0.85));
+    z-index: 100;
+    color: #00aeff !important;
+    padding: 1rem !important;
+    border-radius: 0.3rem; }
+  .nav-item a:hover:after {
+    display: none; }
+  .nav-item a {
+    color: #00aeff !important; }
+  .opacidadoff {
+    opacity: 1; }
+    .opacidadoff:hover {
+      border: none;
+      background-color: transparent; } }
+
+/* --------------------------Diseño resposive Mobile-------------------------- */
+@media screen and (max-width: 600px) {
+  /* header MQ */
+  .navbar-brand {
+    display: none; }
+  h3 {
+    display: none; }
+  .separador {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .fondo__1, .fondo__2 {
+    background-image: url(../Imagenes/metal.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-attachment: fixed; }
+  .seccion {
+    min-height: 80vh; }
+  .nav-item a:hover:after {
+    display: none; }
+  .container {
+    padding: 1.5rem; }
+  /* footer MQ */
+  .cab--footer {
+    justify-content: center;
+    flex-direction: column;
+    min-height: 210px; }
+  .info {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center; }
+  .navbar-toggler-icon i {
+    font-size: 25px; }
+  /* --------------------------Inicio MQ-------------------------- */
+  .seccion__img {
+    margin-top: 100px !important;
+    margin: 0 auto; }
+    .seccion__img img {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block; }
+  .btn, .btn-outline-info {
+    margin-bottom: 1rem; }
+  /* --------------------------Empresa MQ-------------------------- */
+  .carousel-inner {
+    display: none; }
+  .col-md-4 {
+    padding: 0; }
+  .iconos {
+    width: 95% !important; }
+  .col {
+    border: none; } }
