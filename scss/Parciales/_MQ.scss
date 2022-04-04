@@ -53,8 +53,8 @@ body {
    }
 
    .container-fluid {
-    position: sticky;
-    background-image: none;
+    position: relative;
+  
    }
 
 
@@ -108,7 +108,7 @@ body {
         @include Flex (center, center);}
 
         body, .fondo__1, .fondo__2 {
-        background-image: url(../Imagenes/metal.jpeg) ;
+        
         background-repeat: no-repeat;
         background-size: cover;
         object-fit: cover;

@@ -267,22 +267,6 @@ h3 {
   max-height: 400px;
   min-height: 300px; }
 
-.ccl {
-  width: 1200px; }
-
-.papa_renegado {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end; }
-
-.renegado__tamaño {
-  max-width: 600px;
-  display: flex; }
-
-.aber {
-  width: 400px; }
-
 .carousel-inner {
   width: 100%;
   padding: 1rem; }
@@ -356,8 +340,7 @@ body p {
     border: black;
     width: 100%; }
   .container-fluid {
-    position: sticky;
-    background-image: none; }
+    position: relative; }
   .navbar-brand {
     display: none; }
   .nav-item a {
@@ -390,7 +373,6 @@ body p {
     justify-content: center;
     align-items: center; }
   body, .fondo__1, .fondo__2 {
-    background-image: url(../Imagenes/metal.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
