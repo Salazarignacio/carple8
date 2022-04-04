@@ -8,7 +8,7 @@
 }
 
 i {
-    color: rgb(0, 174, 255);
+    color: #29bce0
     ;
 }
 
@@ -32,7 +32,7 @@ background-attachment: fixed;
 .activo {
     font-weight: bold;
     font-size: 17px;
-    color: rgb(0, 174, 255) !important;
+    color: #29bce0 !important;
 }
 
 
@@ -65,7 +65,7 @@ min-height: 220px;
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: rgb(0, 174, 255);
+    background: #29bce0;
     ;
     transform: scaleX(0);
     transform-origin: left;
@@ -80,7 +80,7 @@ min-height: 220px;
 .nav-link:hover,
 a:hover,
 .activo:hover {
-    color: rgb(0, 174, 255);
+    color: #29bce0;
     ;
 }
 
@@ -96,6 +96,7 @@ i:hover {
 
 .navbar {
     height: 80px;
+    
 }
 
 .nav-link {

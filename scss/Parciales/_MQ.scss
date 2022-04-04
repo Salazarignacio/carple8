@@ -48,11 +48,13 @@ body {
 
    /* Header */
    .negro {
-       border: none ;
+       border: black;
+       width: 100%;
    }
 
    .container-fluid {
-    position: relative
+    position: sticky;
+    background-image: none;
    }
 
 
@@ -97,6 +99,9 @@ body {
     /* header MQ */
     .navbar-brand {
         display: none;
+    }
+    .MQB {
+        background-color: black;
     }
     h3 {display: none;}
     .separador {
