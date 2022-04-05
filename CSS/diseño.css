@@ -10,13 +10,6 @@
 i {
   color: #29bce0; }
 
-body {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  object-fit: cover;
-  background-attachment: fixed; }
-
 /* bootstrap header */
 .transparencia {
   background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895)); }
@@ -363,7 +356,6 @@ body p {
 @media screen and (max-width: 600px) {
   .fondo__1, .fondo__2 {
     background-image: url(../Imagenes/metal.jpeg);
-    background-color: rgba(166, 242, 255, 0.637);
     background-attachment: fixed; }
   /* header MQ */
   .MQB {
@@ -375,7 +367,7 @@ body p {
     justify-content: center;
     align-items: center; }
   .seccion {
-    min-height: 80vh; }
+    min-height: 70vh; }
   .nav-item a:hover:after {
     display: none; }
   .container {
