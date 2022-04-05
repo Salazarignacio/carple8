@@ -361,22 +361,19 @@ body p {
 
 /* --------------------------Diseño resposive Mobile-------------------------- */
 @media screen and (max-width: 600px) {
+  .fondo__1, .fondo__2 {
+    background-image: url(../Imagenes/metal.jpeg);
+    background-color: rgba(166, 242, 255, 0.637);
+    background-attachment: fixed; }
   /* header MQ */
-  .navbar-brand {
-    display: none; }
   .MQB {
-    background-color: black; }
+    background-color: rgba(0, 0, 0, 0.527); }
   h3 {
     display: none; }
   .separador {
     display: flex;
     justify-content: center;
     align-items: center; }
-  body, .fondo__1, .fondo__2 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-attachment: fixed; }
   .seccion {
     min-height: 80vh; }
   .nav-item a:hover:after {
