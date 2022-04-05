@@ -19,14 +19,9 @@ i {
   font-size: 17px;
   color: #29bce0 !important; }
 
-/* .cab--footer {
-display: flex;
-align-items: center;
-min-height: 220px;
-}*/
 .container-fluid {
   position: fixed;
-  background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
+  background-color: rgba(0, 0, 0, 0.895);
   min-height: 80px;
   z-index: 1; }
 
@@ -367,7 +362,7 @@ body p {
     justify-content: center;
     align-items: center; }
   .seccion {
-    min-height: 70vh; }
+    min-height: 60vh; }
   .nav-item a:hover:after {
     display: none; }
   .container {
