@@ -91,6 +91,12 @@ i:hover {
   background-color: rgba(0, 0, 0, 0.445); }
 
 /* Index */
+p {
+  text-align: justify; }
+
+img {
+  border-radius: 0.3rem; }
+
 .seccion {
   display: flex;
   align-items: center;
