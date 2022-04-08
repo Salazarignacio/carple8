@@ -47,8 +47,12 @@ body {
 @media screen and (max-width: 1023px) {
 
    /* Header */
+
+   .nav-item .activo  {
+    display: none;
+}
    .negro {
-       border: black;
+       border: none;
        width: 100%;
    }
 
@@ -62,9 +66,9 @@ body {
         display: none;
     }
     .nav-item a {
-        background-image: linear-gradient(to right, rgba(82, 82, 82, 0.85), rgba(0, 0, 0, 0.85));
+      
         z-index: 100;
-        color:rgb(0, 174, 255) !important;
+        color:#29bce0 !important;
         padding: 1rem !important;
         border-radius: $container-border;
         
@@ -105,6 +109,10 @@ body {
 
 
     /* header MQ */
+
+.nav-item .activo  {
+        display: none;
+    }
  
     .MQB {
         background-color: rgba(0, 0, 0, 0.527);

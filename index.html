@@ -40,9 +40,31 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!--menu dentro de menu-->
+
                         <li class="nav-item">
-                            <a class="nav-link  activo" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link  activo" aria-current="page" href="#">Inicio <i class="fa-solid fa-caret-down"></i></a>
+                            
+                            <ul class="submenu">
+                                <li class="nav-item submenu__li">
+                                    <a class="nav-link submenu__li__a" href="#empresa">Empresa</a>
+                                </li>
+                                <li class="nav-item submenu__li">
+                                    <a class="nav-link submenu__li__a" href="#productos">Productos</a>
+                                </li>
+                                
+                                <li class="nav-item submenu__li">
+                                    <a class="nav-link submenu__li__a" href="#obras">Obras</a>
+                                </li>
+                                <li class="nav-item submenu__li">
+                                    <a class="nav-link submenu__li__a" href="#contacto">Contacto</a>
+                                </li>
+                            </ul>
                         </li>
+
+                        <!--demas enlaces-->
+
                         <li class="nav-item">
                             <a class="nav-link" href="pages/Productos.html">Productos</a>
                         </li>
@@ -83,6 +105,7 @@
 
                 <div class=" negro negro__top">
                     <section>
+                        <a name="empresa"></a>
 
                         <article>
 
@@ -168,16 +191,17 @@
                     <!---------------------------Section Productos--------------------------->
 
                     <section class="contenedor-m row MQB">
-
+                        <a name="productos"></a>
 
                         <article>
 
-                            <!-- Imagenes provisorias de los productos a mostrar -->
+                            <!-- Imagenes de los productos a mostrar -->
 
                             <h2 class="pb-4 animate__slideInLeft heading">Productos</h2>
                             <h3 class="animate__slideInLeft mb-5">Amplia variedad en Aberturas de PVC, Aluminio, madera,
                                 chapa,
                                 portones, persianas y cortinas.</h3>
+                                
                             <div class="col ">
                                 <div class="row animate__animated  animate__zoomIn">
 
@@ -244,6 +268,7 @@
             <!---------------------------Section Obras--------------------------->
             <div class="fondo__2 MQB">
                 <section class="section__light">
+                    <a name="obras"></a>
 
 
                     <article>
@@ -303,6 +328,7 @@
 
 
                 <section  class="contenedorContactos fondo">
+                    <a name="contacto"></a>
                     <!--contendedor contacto-->
                     <article>
 

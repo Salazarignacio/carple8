@@ -6,6 +6,39 @@ p {
 img {
     border-radius: 0.3rem;
 }
+
+// menu dentro de menu
+.submenu {
+    list-style: none;
+    font-size: 0;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: .5rem;
+}
+
+.submenu .submenu__li {
+    display: block;
+}
+
+.nav-item:hover .submenu {
+    display: block;
+}
+
+.fa-caret-down {
+    font-size: 15px !important;
+    
+}
+
+
 .seccion {
     display: flex;
     align-items: center;
