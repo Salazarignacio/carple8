@@ -99,6 +99,10 @@ body {
   
 
 @media screen and (max-width: 600px) {
+
+    .contenedor-m-b {
+        padding: 0
+    }
 .fondo__1, .fondo__2 {
     background-image:url(../Imagenes/metal.jpeg) ;
     
@@ -154,6 +158,8 @@ display: none;
         font-size: 25px;
     }
     /* --------------------------Inicio MQ-------------------------- */
+  
+      
     
     .seccion__img {
         
