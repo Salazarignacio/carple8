@@ -1,25 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    color: white;
-    font-size: 15px;
-}
-
-i {
-    color: #29bce0
-    ;
-}
-
-
-
-
-/* bootstrap header */
-
-.transparencia {
-    background-image: linear-gradient(to left, rgba(82, 82, 82, 0.895), rgba(0, 0, 0, 0.895));
-}
+/* adaptacion bootstrap header */
 
 .activo {
     font-weight: bold;
@@ -27,18 +6,14 @@ i {
     color: #29bce0 !important;
 }
 
-
-
-
-.container-fluid   {
+.container-fluid {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.895);
     min-height: 80px;
     z-index: 1;
 }
 
-
-/* animacion*/
+/* animacion del nav*/
 
 .nav-item a {
     position: relative;
@@ -76,30 +51,48 @@ i:hover {
     color: white;
 }
 
-
-/* fin animacion */
-
-
 /* NavBar adaptaciones*/
 
 .navbar {
     height: 80px;
-    
 }
 
 .nav-link {
     color: white;
 }
 
+// imagen del nav
 .navbar-brand img {
-    width: 150px;
+    width: 200px;
 }
 
 
-/* Borde */
+// menu dentro de menu
+.submenu {
+    list-style: none;
+    font-size: 0;
+}
 
-.col {
-  
-    padding: 0.8rem;
-    border-radius: 0.3rem;
+.nav-link {
+    display: inline-block;
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: .5rem;
+}
+
+.submenu .submenu__li {
+    display: block;
+}
+
+.nav-item:hover .submenu {
+    display: block;
+}
+
+.fa-caret-down {
+    font-size: 13px !important;
 }

@@ -9,6 +9,9 @@
     font-size: 18px;
 }
 
+
+// aplicando estilos a contenedores con SASS (luego se anulan algunas declaraciones por cambios esteticos)
+
 .container,
 .contenedor-m,
 .contenedor,
@@ -72,6 +75,10 @@
 }
 
 // Contactos -----------------------
+
+.section__contacto {
+    background-image: linear-gradient(to top, rgb(20, 20, 20), rgba(20, 20, 20, 0));
+}
 .contenedorContactos {
     max-width: 600px !important;
 }

@@ -1,55 +1,31 @@
-/* Index */
+// a todo el sitio
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+// a todos los iconos
+i {
+    color: #29bce0;
+}
+
+// a todas las imagenes
+img {
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+// a todos los parrafos
 p {
     text-align: justify;
 }
 
-img {
-    border-radius: 0.3rem;
-}
-
-// menu dentro de menu
-.submenu {
-    list-style: none;
-    font-size: 0;
-}
-
-.nav-link {
-    display: inline-block;
-    position: relative;
-}
-
-.submenu {
-    position: absolute;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.781);
-    padding: .5rem;
-}
-
-.submenu .submenu__li {
-    display: block;
-}
-
-.nav-item:hover .submenu {
-    display: block;
-}
-
-.fa-caret-down {
-    font-size: 15px !important;
-    
-}
-
-
-.seccion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    & img {
-        width: 100%;
-        max-width: 800px;
-        
-    }
-}
+// headings 
 
 .heading {
     font-size: 30px;
@@ -63,31 +39,25 @@ img {
     margin-bottom: 1rem;
 }
 
+/* Index */
 
-/* Section */
-
-// margin: 100px 0px 100px; 
 .seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    margin: 0 auto
+    margin: 0 auto;
+
+    & img {
+        max-width: 800px;
+    }
 }
 
-.navbar-brand img {
-    width: 200px;
-   
-}
 
-.opaco {
-    background-color: rgba(0, 0, 0, 0.384);
-}
+// section empresa (esto fue pisado por otras declaraciones, se dejo en el archivo por la implementacion de SASS)
 
-// sections
-#not-color {
-    background-image: none;
-    border-radius: 0;
-}
+$section-estilo: (modo: flex, eje-x: center, eje-y: center, Min-H: 100vh, );
 
-$section-estilo: ( modo: flex, eje-x: center, eje-y: center, Min-H: 100vh, );
 .section__empresa {
     background-image: url(../Imagenes/pexels-photo-1118786.jpeg);
     display: map-get($section-estilo, modo);
@@ -97,24 +67,17 @@ $section-estilo: ( modo: flex, eje-x: center, eje-y: center, Min-H: 100vh, );
     margin: 0px;
 }
 
-.separador__empresa {
-    background-image: url(../Imagenes/pexels-photo-1118786.jpeg);
+//carrucel empresa
+.carousel-inner {
+    padding: 1rem;
 }
 
-
+// section productos (tambien fue pisada por otras declaraciones)
 
 .section__productos {
     background-image: url(../Imagenes/productos.jpeg);
     background-repeat: no-repeat;
     background-position: cover;
-}
-
-.separador {
-    @include Flex (space-between, center);
-    width: 100%;
-    min-height: 50px;
-    font-size: 25px;
-    padding: 0 1rem 0 1rem;
 }
 
 h2 {
@@ -125,13 +88,4 @@ h2 {
 h3 {
     font-size: 20px;
     font-weight: lighter !important;
-    
-}
-
-.separador__productos {
-    background-image: url(../Imagenes/productos.jpeg);
-}
-
-.section__contacto {
-    background-image: linear-gradient(to top, rgb(20, 20, 20), rgba(20, 20, 20, 0));
 }

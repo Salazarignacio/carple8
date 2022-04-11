@@ -1,11 +1,12 @@
+// contenedor principal
+
 .contenedor-m {
     max-width: 1300px;
     margin: 0 auto;
     background-image: none;
-    
-
-    border-radius: 0;
 }
+
+// degrade hacia segundo background
 
 .section__light {
     background-image: linear-gradient(to bottom, rgb(20, 20, 20), rgba(20, 20, 20, 0.0));
@@ -18,6 +19,8 @@
     @extend .contenedor-m;
     background-image: linear-gradient(to , rgba(20, 20, 20, 0.938), rgba(20, 20, 20, 0)); 
 }
+
+// bordes laterales del index version desktop
 .negro  {
     @extend .contenedor-m;
     border-right: solid 3px rgb(41, 188, 224);
@@ -36,21 +39,20 @@
             border-radius: 0.2rem;
             }
     
-
-.nigga {
-   background-color: transparent;
-}
-
-   
+// degrade negro
 
 .section__dark {
     background-image: linear-gradient(to top, rgb(20, 20, 20), rgba(20, 20, 20, 0.180));
 }
 
+// background del sitio
+
 .fondo__1 {
     background-image: url(../Imagenes/pexels-soloman-soh-1492232.jpg);
     background-attachment: fixed;
 }
+
+// segundo background del sitio (solo en index, vista desktop)
 
 .fondo__2 {
     background-image: url(../Imagenes/pexels-mitchell-luo-3809772.jpg);
