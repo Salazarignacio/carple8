@@ -72,13 +72,6 @@ $section-estilo: (modo: flex, eje-x: center, eje-y: center, Min-H: 100vh, );
     padding: 1rem;
 }
 
-// section productos (tambien fue pisada por otras declaraciones)
-
-.section__productos {
-    background-image: url(../Imagenes/productos.jpeg);
-    background-repeat: no-repeat;
-    background-position: cover;
-}
 
 h2 {
     font-weight: 500;

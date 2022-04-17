@@ -142,11 +142,6 @@ p {
 .carousel-inner {
   padding: 1rem; }
 
-.section__productos {
-  background-image: url(../Imagenes/productos.jpeg);
-  background-repeat: no-repeat;
-  background-position: cover; }
-
 h2 {
   font-weight: 500;
   font-size: 30px; }
