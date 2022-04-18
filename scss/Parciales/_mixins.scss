@@ -1,3 +1,5 @@
+// ARCHIVO DE DECLARACION DE MIXINS
+
 @mixin Flex($eje-principal, $eje-secundario) {
     display: flex;
     justify-content: $eje-principal;

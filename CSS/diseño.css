@@ -23,14 +23,13 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: #29bce0;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.2s; }
 
 .nav-item a:hover:after {
-  transform: left;
   transform: scaleX(1); }
 
 .nav-link:hover,
@@ -74,7 +73,6 @@ i:hover {
 .fa-caret-down {
   font-size: 13px !important; }
 
-/* Footer */
 .cab--footer {
   margin: 0 auto;
   display: flex;
